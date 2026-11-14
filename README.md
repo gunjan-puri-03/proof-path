@@ -403,7 +403,3 @@ Each record contains: `anomaly_id`, `label`, `description`, `affected_entity`, `
 9. Full-mode (8,000 customer / 20,000 document / 3,000 review) generation, export and validation remain to be run locally against PostgreSQL; only starter-mode verification is included in this review package.
 
 ---
-
-## AI Transparency
-
-This project was built with AI assistance. See [docs/AI_PROMPT_HISTORY.md](docs/AI_PROMPT_HISTORY.md) for the full prompt history, what was AI-generated, what was reviewed, and what was modified.
