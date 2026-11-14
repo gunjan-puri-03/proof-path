@@ -1,0 +1,32 @@
+id,bo_id,business_customer_id,individual_customer_id,full_name,date_of_birth,nationality,country_of_residence,ownership_percentage,control_type,is_pep,is_sanctioned,is_verified,verification_date,is_active,created_at,updated_at
+1,BO-CUS-000002-001,2,,Ashley Durham,1983-10-09,Switzerland,Australia,40.0,Direct,False,False,True,2022-02-27,True,2022-01-29T00:00:00,2026-10-22T00:00:00
+2,BO-CUS-000002-002,2,,Kristy Alvarado,1996-06-25,China,Brazil,40.0,Direct,False,False,True,2022-02-07,True,2022-01-29T00:00:00,2026-10-22T00:00:00
+3,BO-CUS-000002-003,2,,Elizabeth Morales,1999-11-21,United Arab Emirates,Netherlands,40.0,Joint,False,False,True,2022-02-21,True,2022-01-29T00:00:00,2026-10-22T00:00:00
+4,BO-CUS-000009-001,9,,Scott Smith,1976-01-30,Germany,United Kingdom,3.52,Indirect,False,False,True,,True,2023-04-30T00:00:00,2026-10-22T00:00:00
+5,BO-CUS-000009-002,9,,David Peters,1978-06-30,United Kingdom,Netherlands,47.55,Joint,False,False,True,2023-05-27,True,2023-04-30T00:00:00,2026-10-22T00:00:00
+6,BO-CUS-000009-003,9,,Timothy Valenzuela,1982-02-21,Switzerland,United States,45.49,Indirect,True,False,False,2023-05-03,True,2023-04-30T00:00:00,2026-10-22T00:00:00
+7,BO-CUS-000009-004,9,,Madison Jordan,1966-10-17,United Arab Emirates,Switzerland,3.44,Direct,False,False,True,2023-05-30,True,2023-04-30T00:00:00,2026-10-22T00:00:00
+8,BO-CUS-000025-001,25,,Nicole Smith,1984-10-11,United Kingdom,United States,57.85,Joint,False,False,False,2023-06-15,True,2023-06-11T00:00:00,2026-10-22T00:00:00
+9,BO-CUS-000025-002,25,,John Ray,1974-06-28,France,India,25.99,Direct,False,False,True,2023-07-04,True,2023-06-11T00:00:00,2026-10-22T00:00:00
+10,BO-CUS-000025-003,25,,Tracy Burke,1996-01-13,Australia,Singapore,16.16,Joint,False,False,True,2023-07-04,True,2023-06-11T00:00:00,2026-10-22T00:00:00
+11,BO-CUS-000031-001,31,,Susan Dorsey,1993-12-31,China,Singapore,22.62,Direct,False,False,True,2023-08-20,True,2023-08-18T00:00:00,2026-10-22T00:00:00
+12,BO-CUS-000031-002,31,,Alex Schmidt,1970-11-15,Hong Kong,Hong Kong,77.38,Joint,False,False,False,2023-09-13,True,2023-08-18T00:00:00,2026-10-22T00:00:00
+13,BO-CUS-000041-001,41,,Brenda Mccormick,1980-09-12,Australia,United Kingdom,100.0,Indirect,False,False,True,2025-02-24,True,2025-01-25T00:00:00,2026-10-22T00:00:00
+14,BO-CUS-000047-001,47,,Erica Cruz,1969-10-05,Brazil,Hong Kong,50.83,Indirect,False,False,True,2023-07-10,True,2023-06-27T00:00:00,2026-10-22T00:00:00
+15,BO-CUS-000047-002,47,,Joe Knapp,1996-10-31,Singapore,Germany,7.35,Indirect,False,False,True,,True,2023-06-27T00:00:00,2026-10-22T00:00:00
+16,BO-CUS-000047-003,47,,Albert Espinoza,1982-08-15,Brazil,Hong Kong,2.94,Indirect,False,False,True,2023-07-02,True,2023-06-27T00:00:00,2026-10-22T00:00:00
+17,BO-CUS-000047-004,47,,Robert Bennett,1967-08-16,China,Netherlands,38.88,Direct,False,False,True,2023-07-12,True,2023-06-27T00:00:00,2026-10-22T00:00:00
+18,BO-CUS-000060-001,60,,Nancy Johnson,1963-04-03,Nigeria,United States,73.41,Indirect,False,False,True,2023-01-20,True,2023-01-17T00:00:00,2026-10-22T00:00:00
+19,BO-CUS-000060-002,60,,Erin Miller,1981-10-11,Canada,Hong Kong,26.59,Joint,False,False,True,2023-01-26,True,2023-01-17T00:00:00,2026-10-22T00:00:00
+20,BO-CUS-000066-001,66,,James Simpson,1964-08-03,Japan,South Africa,100.0,Indirect,False,False,True,2024-01-12,True,2023-12-22T00:00:00,2026-10-22T00:00:00
+21,BO-CUS-000070-001,70,,David Thomas,1977-12-03,China,Japan,51.24,Direct,False,False,True,2021-09-22,True,2021-09-03T00:00:00,2026-10-22T00:00:00
+22,BO-CUS-000070-002,70,,Robert Rich,1981-01-15,South Africa,Switzerland,10.45,Joint,False,False,True,2021-09-16,True,2021-09-03T00:00:00,2026-10-22T00:00:00
+23,BO-CUS-000070-003,70,,Jennifer Barrett,1978-02-28,Switzerland,Singapore,26.73,Joint,False,False,False,2021-09-16,True,2021-09-03T00:00:00,2026-10-22T00:00:00
+24,BO-CUS-000070-004,70,,Erica Wiggins,1992-09-24,Canada,United Arab Emirates,11.58,Joint,False,False,True,2021-09-04,True,2021-09-03T00:00:00,2026-10-22T00:00:00
+25,BO-CUS-000074-001,74,,Caleb Carlson,1984-11-14,Hong Kong,Netherlands,2.08,Joint,False,False,True,,True,2020-02-01T00:00:00,2026-10-22T00:00:00
+26,BO-CUS-000074-002,74,,Anthony Chung,1987-10-26,Germany,China,5.6,Direct,True,False,True,2020-02-14,True,2020-02-01T00:00:00,2026-10-22T00:00:00
+27,BO-CUS-000074-003,74,,Rachael Orozco,1995-09-25,Hong Kong,Netherlands,10.66,Direct,False,False,True,,True,2020-02-01T00:00:00,2026-10-22T00:00:00
+28,BO-CUS-000074-004,74,,Stephanie Kim,1981-04-05,Germany,Brazil,81.66,Indirect,False,False,True,2020-02-10,True,2020-02-01T00:00:00,2026-10-22T00:00:00
+29,BO-CUS-000091-001,91,,Seth Flores,1971-08-27,Switzerland,Switzerland,4.66,Indirect,False,False,True,2021-02-10,True,2021-01-27T00:00:00,2026-10-22T00:00:00
+30,BO-CUS-000091-002,91,,Natasha Brown,1977-12-31,United Kingdom,Brazil,95.34,Direct,False,False,True,2021-01-31,True,2021-01-27T00:00:00,2026-10-22T00:00:00
+31,BO-CUS-000092-001,92,,Caroline Smith,1962-02-08,Sweden,Switzerland,100.0,Direct,False,False,True,2024-10-19,True,2024-09-20T00:00:00,2026-10-22T00:00:00

@@ -1,0 +1,47 @@
+[
+  {
+    "anomaly_id": 1,
+    "label": "EXPIRED_BUT_MARKED_VALID",
+    "description": "Document expired but marked as VERIFIED",
+    "affected_entity": "Document",
+    "affected_id": "DOC-CUS-000002-001",
+    "customer_id": "CUS-000002",
+    "detail": "expiry_date=2026-05-26, status=VERIFIED"
+  },
+  {
+    "anomaly_id": 2,
+    "label": "APPROVED_WITH_MISSING_EVIDENCE",
+    "description": "Customer approved with missing mandatory evidence",
+    "affected_entity": "Customer",
+    "affected_id": "CUS-000003",
+    "customer_id": "CUS-000003",
+    "detail": "kyc_completeness=0.00%, onboarding_status=APPROVED"
+  },
+  {
+    "anomaly_id": 3,
+    "label": "OWNERSHIP_EXCEEDS_100",
+    "description": "Ownership percentages exceed 100%",
+    "affected_entity": "BeneficialOwner",
+    "affected_id": "CUS-000002 (multiple BOs)",
+    "customer_id": "CUS-000002",
+    "detail": "total_ownership_pct=120.00%"
+  },
+  {
+    "anomaly_id": 4,
+    "label": "REVIEW_CLOSED_WITHOUT_RESOLUTION",
+    "description": "Review case closed without resolution",
+    "affected_entity": "ReviewCase",
+    "affected_id": "REV-CUS-000005-2025-01",
+    "customer_id": "CUS-000005",
+    "detail": "closed_at=2026-10-22 00:00:00, resolution=None"
+  },
+  {
+    "anomaly_id": 5,
+    "label": "DUPLICATE_DOCUMENT_CROSS_CUSTOMER",
+    "description": "Duplicate document number used across unrelated customers",
+    "affected_entity": "Document",
+    "affected_id": "DOC-CUS-000005-002 / DOC-CUS-000001-002",
+    "customer_id": "CUS-000005 / CUS-000001",
+    "detail": "document_number=??-32630554"
+  }
+]

@@ -1,0 +1,96 @@
+{
+  "run1_checksums": {
+    "customer_types": {
+      "count": 7,
+      "checksum": "7fc55fbde0b50da26be4739e5e90dfeb9ab9ec9c5013224751848dbdbefec756"
+    },
+    "customers": {
+      "count": 100,
+      "checksum": "e5dac122c70d022bff27556345e830daf90b7903865a9e6819b6c8e5d06ae55a"
+    },
+    "kyc_requirements": {
+      "count": 27,
+      "checksum": "9521dc966b2169ec99ed0899abb8bd973f3f1a62e05c5f83a34d0cbb311d2fd2"
+    },
+    "documents": {
+      "count": 300,
+      "checksum": "2538df6a9687b4c3b432cb44d4727d4e2b1fc346f54f0f3ac8896262334b56f1"
+    },
+    "verifications": {
+      "count": 224,
+      "checksum": "93067e7806449ac49668e67a7fc7c52867596b62348c0ff34ebe5da0b245b535"
+    },
+    "risk_ratings": {
+      "count": 100,
+      "checksum": "8541276bbb0bf1aaebf050b570fc02c1abd4364e0e0348db4fc1a8baa4516744"
+    },
+    "review_cases": {
+      "count": 50,
+      "checksum": "2edfb6621c5ebd0ed95f23f760dda2c80a8bbbeab7c39bb2b1d3c18cb771d28e"
+    },
+    "beneficial_owners": {
+      "count": 31,
+      "checksum": "84b4995bcdbb9851e62b39fc32a8e6d3a2abd0a65b6dd876789751c45ff2a0d5"
+    },
+    "alerts": {
+      "count": 88,
+      "checksum": "a5adcd300f60ae454a4d975496e7a0e0379c1047ebbf1a043245f3cec343504c"
+    },
+    "audit_events": {
+      "count": 771,
+      "checksum": "777d8e2e8f4b3cf0a1c6eb70fb44e5f4fe0141c4c134d10c2e700af0b0b59143"
+    },
+    "customer_document_requirements": {
+      "count": 241,
+      "checksum": "80d486f490f0df6bfa0b2addce3080e0de6addd5ee7cb7b38c804f4fb4a4466e"
+    }
+  },
+  "run2_checksums": {
+    "customer_types": {
+      "count": 7,
+      "checksum": "7fc55fbde0b50da26be4739e5e90dfeb9ab9ec9c5013224751848dbdbefec756"
+    },
+    "customers": {
+      "count": 100,
+      "checksum": "e5dac122c70d022bff27556345e830daf90b7903865a9e6819b6c8e5d06ae55a"
+    },
+    "kyc_requirements": {
+      "count": 27,
+      "checksum": "9521dc966b2169ec99ed0899abb8bd973f3f1a62e05c5f83a34d0cbb311d2fd2"
+    },
+    "documents": {
+      "count": 300,
+      "checksum": "2538df6a9687b4c3b432cb44d4727d4e2b1fc346f54f0f3ac8896262334b56f1"
+    },
+    "verifications": {
+      "count": 224,
+      "checksum": "93067e7806449ac49668e67a7fc7c52867596b62348c0ff34ebe5da0b245b535"
+    },
+    "risk_ratings": {
+      "count": 100,
+      "checksum": "8541276bbb0bf1aaebf050b570fc02c1abd4364e0e0348db4fc1a8baa4516744"
+    },
+    "review_cases": {
+      "count": 50,
+      "checksum": "2edfb6621c5ebd0ed95f23f760dda2c80a8bbbeab7c39bb2b1d3c18cb771d28e"
+    },
+    "beneficial_owners": {
+      "count": 31,
+      "checksum": "84b4995bcdbb9851e62b39fc32a8e6d3a2abd0a65b6dd876789751c45ff2a0d5"
+    },
+    "alerts": {
+      "count": 88,
+      "checksum": "a5adcd300f60ae454a4d975496e7a0e0379c1047ebbf1a043245f3cec343504c"
+    },
+    "audit_events": {
+      "count": 771,
+      "checksum": "777d8e2e8f4b3cf0a1c6eb70fb44e5f4fe0141c4c134d10c2e700af0b0b59143"
+    },
+    "customer_document_requirements": {
+      "count": 241,
+      "checksum": "80d486f490f0df6bfa0b2addce3080e0de6addd5ee7cb7b38c804f4fb4a4466e"
+    }
+  },
+  "all_tables_match": true,
+  "ground_truth_match": true
+}

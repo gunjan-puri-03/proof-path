@@ -1,0 +1,295 @@
+{
+  "validation": {
+    "results": [
+      {
+        "check": "PK uniqueness: customers.customer_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "No duplicate customer_id in customers",
+        "sample": "none"
+      },
+      {
+        "check": "PK uniqueness: documents.document_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "No duplicate document_id in documents",
+        "sample": "none"
+      },
+      {
+        "check": "PK uniqueness: kyc_requirements.requirement_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "No duplicate requirement_id in kyc_requirements",
+        "sample": "none"
+      },
+      {
+        "check": "PK uniqueness: review_cases.review_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "No duplicate review_id in review_cases",
+        "sample": "none"
+      },
+      {
+        "check": "PK uniqueness: alerts.alert_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "No duplicate alert_id in alerts",
+        "sample": "none"
+      },
+      {
+        "check": "PK uniqueness: beneficial_owners.bo_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "No duplicate bo_id in beneficial_owners",
+        "sample": "none"
+      },
+      {
+        "check": "PK uniqueness: verifications.verification_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "No duplicate verification_id in verifications",
+        "sample": "none"
+      },
+      {
+        "check": "PK uniqueness: audit_events.audit_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "No duplicate audit_id in audit_events",
+        "sample": "none"
+      },
+      {
+        "check": "PK uniqueness: risk_ratings.risk_rating_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "No duplicate risk_rating_id in risk_ratings",
+        "sample": "none"
+      },
+      {
+        "check": "FK: documents.customer_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "All documents reference valid customers",
+        "sample": "none"
+      },
+      {
+        "check": "FK: verifications.document_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "All verifications reference valid documents",
+        "sample": "none"
+      },
+      {
+        "check": "FK: risk_ratings.customer_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "All risk_ratings reference valid customers",
+        "sample": "none"
+      },
+      {
+        "check": "FK: review_cases.customer_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "All review_cases reference valid customers",
+        "sample": "none"
+      },
+      {
+        "check": "FK: beneficial_owners.business_customer_id",
+        "passed": true,
+        "affected_count": 0,
+        "description": "All beneficial_owners reference valid customers",
+        "sample": "none"
+      },
+      {
+        "check": "Date order: documents issue_date <= expiry_date",
+        "passed": true,
+        "affected_count": 0,
+        "description": "Issue date must be before expiry date",
+        "sample": "none"
+      },
+      {
+        "check": "Date order: customers onboarding_date <= approved_date",
+        "passed": true,
+        "affected_count": 0,
+        "description": "Onboarding date must precede approval date",
+        "sample": "none"
+      },
+      {
+        "check": "Date order: review opened_at <= closed_at",
+        "passed": true,
+        "affected_count": 0,
+        "description": "Review opened before closed",
+        "sample": "none"
+      },
+      {
+        "check": "Enum: documents.document_status valid",
+        "passed": true,
+        "affected_count": 0,
+        "description": "All document statuses are valid enum values",
+        "sample": "none"
+      },
+      {
+        "check": "Enum: customers.onboarding_status valid",
+        "passed": true,
+        "affected_count": 0,
+        "description": "All onboarding statuses are valid",
+        "sample": "none"
+      },
+      {
+        "check": "Ownership > 100% (should catch anomaly 3)",
+        "passed": true,
+        "affected_count": 1,
+        "description": "Detects ownership exceeds 100% (anomaly 3 exists)",
+        "sample": "[(2, 120)]"
+      },
+      {
+        "check": "Approved customers with 0% KYC completeness",
+        "passed": true,
+        "affected_count": 1,
+        "description": "Detects anomaly 2 \u2014 approved with missing evidence",
+        "sample": "[('CUS-000003',)]"
+      },
+      {
+        "check": "Expired documents marked VERIFIED (anomaly 1)",
+        "passed": true,
+        "affected_count": 1,
+        "description": "Detects anomaly 1 \u2014 expired doc marked verified",
+        "sample": "[('DOC-CUS-000002-001',)]"
+      },
+      {
+        "check": "Reviews closed without resolution (anomaly 4)",
+        "passed": true,
+        "affected_count": 1,
+        "description": "Detects anomaly 4",
+        "sample": "[('REV-CUS-000005-2025-01',)]"
+      },
+      {
+        "check": "Duplicate document numbers (anomaly 5)",
+        "passed": true,
+        "affected_count": 1,
+        "description": "Detects anomaly 5 \u2014 duplicate doc numbers",
+        "sample": "[('??-32630554', 2)]"
+      },
+      {
+        "check": "Ground truth anomaly alerts present",
+        "passed": true,
+        "affected_count": 5,
+        "description": "Anomaly alerts must exist",
+        "sample": "[('ALT-2026-000084',), ('ALT-2026-000085',), ('ALT-2026-000086',)]"
+      },
+      {
+        "check": "record_count:customers",
+        "passed": true,
+        "affected_count": 100,
+        "description": "customers has 100 records",
+        "sample": "n/a"
+      },
+      {
+        "check": "record_count:documents",
+        "passed": true,
+        "affected_count": 300,
+        "description": "documents has 300 records",
+        "sample": "n/a"
+      },
+      {
+        "check": "record_count:verifications",
+        "passed": true,
+        "affected_count": 224,
+        "description": "verifications has 224 records",
+        "sample": "n/a"
+      },
+      {
+        "check": "record_count:review_cases",
+        "passed": true,
+        "affected_count": 50,
+        "description": "review_cases has 50 records",
+        "sample": "n/a"
+      },
+      {
+        "check": "record_count:alerts",
+        "passed": true,
+        "affected_count": 88,
+        "description": "alerts has 88 records",
+        "sample": "n/a"
+      },
+      {
+        "check": "record_count:audit_events",
+        "passed": true,
+        "affected_count": 771,
+        "description": "audit_events has 771 records",
+        "sample": "n/a"
+      },
+      {
+        "check": "record_count:beneficial_owners",
+        "passed": true,
+        "affected_count": 31,
+        "description": "beneficial_owners has 31 records",
+        "sample": "n/a"
+      },
+      {
+        "check": "record_count:risk_ratings",
+        "passed": true,
+        "affected_count": 100,
+        "description": "risk_ratings has 100 records",
+        "sample": "n/a"
+      }
+    ],
+    "record_counts": {
+      "customers": 100,
+      "documents": 300,
+      "verifications": 224,
+      "review_cases": 50,
+      "alerts": 88,
+      "audit_events": 771,
+      "beneficial_owners": 31,
+      "risk_ratings": 100
+    },
+    "passed": 25,
+    "total": 25
+  },
+  "checksums": {
+    "customer_types": {
+      "count": 7,
+      "checksum": "7fc55fbde0b50da26be4739e5e90dfeb9ab9ec9c5013224751848dbdbefec756"
+    },
+    "customers": {
+      "count": 100,
+      "checksum": "e5dac122c70d022bff27556345e830daf90b7903865a9e6819b6c8e5d06ae55a"
+    },
+    "kyc_requirements": {
+      "count": 27,
+      "checksum": "9521dc966b2169ec99ed0899abb8bd973f3f1a62e05c5f83a34d0cbb311d2fd2"
+    },
+    "documents": {
+      "count": 300,
+      "checksum": "2538df6a9687b4c3b432cb44d4727d4e2b1fc346f54f0f3ac8896262334b56f1"
+    },
+    "verifications": {
+      "count": 224,
+      "checksum": "93067e7806449ac49668e67a7fc7c52867596b62348c0ff34ebe5da0b245b535"
+    },
+    "risk_ratings": {
+      "count": 100,
+      "checksum": "8541276bbb0bf1aaebf050b570fc02c1abd4364e0e0348db4fc1a8baa4516744"
+    },
+    "review_cases": {
+      "count": 50,
+      "checksum": "2edfb6621c5ebd0ed95f23f760dda2c80a8bbbeab7c39bb2b1d3c18cb771d28e"
+    },
+    "beneficial_owners": {
+      "count": 31,
+      "checksum": "84b4995bcdbb9851e62b39fc32a8e6d3a2abd0a65b6dd876789751c45ff2a0d5"
+    },
+    "alerts": {
+      "count": 88,
+      "checksum": "a5adcd300f60ae454a4d975496e7a0e0379c1047ebbf1a043245f3cec343504c"
+    },
+    "audit_events": {
+      "count": 771,
+      "checksum": "777d8e2e8f4b3cf0a1c6eb70fb44e5f4fe0141c4c134d10c2e700af0b0b59143"
+    },
+    "customer_document_requirements": {
+      "count": 241,
+      "checksum": "80d486f490f0df6bfa0b2addce3080e0de6addd5ee7cb7b38c804f4fb4a4466e"
+    }
+  }
+}

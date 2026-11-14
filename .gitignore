@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables (NEVER commit real credentials)
+.env
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Alembic compiled
+*.pyc
+
+# Frontend dependencies and local backups
+node_modules/
+*.bak
+
+# Generated CSV / JSON / SQL exports are deliverables and may be committed.
+# Keep environment files and local database files excluded above.
+
+# Logs
+*.log
+logs/
+
+# Python virtual environments
+.venv/
+venv/
+**/.venv/
+**/venv/

@@ -1,0 +1,8 @@
+id,code,name,description,requires_beneficial_owner,min_beneficial_owner_pct,periodic_review_months,is_active,created_at
+1,INDIVIDUAL,Individual,Natural person customer,False,25.0,24,True,2026-01-01T00:00:00
+2,SOLE_TRADER,Sole Trader,Individual operating a business in their own name,False,25.0,18,True,2026-01-01T00:00:00
+3,PARTNERSHIP,Partnership,Partnership or limited partnership,True,25.0,12,True,2026-01-01T00:00:00
+4,PRIVATE_COMPANY,Private Limited Company,Private limited company,True,25.0,12,True,2026-01-01T00:00:00
+5,PUBLIC_COMPANY,Public Limited Company,Public listed company,True,25.0,12,True,2026-01-01T00:00:00
+6,TRUST,Trust,Trust or foundation,True,25.0,12,True,2026-01-01T00:00:00
+7,NON_PROFIT,Non-Profit Organisation,"Charity, NGO or non-profit entity",True,25.0,18,True,2026-01-01T00:00:00

@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "code": "INDIVIDUAL",
+    "name": "Individual",
+    "description": "Natural person customer",
+    "requires_beneficial_owner": false,
+    "min_beneficial_owner_pct": 25.0,
+    "periodic_review_months": 24,
+    "is_active": true,
+    "created_at": "2026-01-01T00:00:00"
+  },
+  {
+    "id": 2,
+    "code": "SOLE_TRADER",
+    "name": "Sole Trader",
+    "description": "Individual operating a business in their own name",
+    "requires_beneficial_owner": false,
+    "min_beneficial_owner_pct": 25.0,
+    "periodic_review_months": 18,
+    "is_active": true,
+    "created_at": "2026-01-01T00:00:00"
+  },
+  {
+    "id": 3,
+    "code": "PARTNERSHIP",
+    "name": "Partnership",
+    "description": "Partnership or limited partnership",
+    "requires_beneficial_owner": true,
+    "min_beneficial_owner_pct": 25.0,
+    "periodic_review_months": 12,
+    "is_active": true,
+    "created_at": "2026-01-01T00:00:00"
+  },
+  {
+    "id": 4,
+    "code": "PRIVATE_COMPANY",
+    "name": "Private Limited Company",
+    "description": "Private limited company",
+    "requires_beneficial_owner": true,
+    "min_beneficial_owner_pct": 25.0,
+    "periodic_review_months": 12,
+    "is_active": true,
+    "created_at": "2026-01-01T00:00:00"
+  },
+  {
+    "id": 5,
+    "code": "PUBLIC_COMPANY",
+    "name": "Public Limited Company",
+    "description": "Public listed company",
+    "requires_beneficial_owner": true,
+    "min_beneficial_owner_pct": 25.0,
+    "periodic_review_months": 12,
+    "is_active": true,
+    "created_at": "2026-01-01T00:00:00"
+  },
+  {
+    "id": 6,
+    "code": "TRUST",
+    "name": "Trust",
+    "description": "Trust or foundation",
+    "requires_beneficial_owner": true,
+    "min_beneficial_owner_pct": 25.0,
+    "periodic_review_months": 12,
+    "is_active": true,
+    "created_at": "2026-01-01T00:00:00"
+  },
+  {
+    "id": 7,
+    "code": "NON_PROFIT",
+    "name": "Non-Profit Organisation",
+    "description": "Charity, NGO or non-profit entity",
+    "requires_beneficial_owner": true,
+    "min_beneficial_owner_pct": 25.0,
+    "periodic_review_months": 18,
+    "is_active": true,
+    "created_at": "2026-01-01T00:00:00"
+  }
+]
